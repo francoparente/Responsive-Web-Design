@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 2-Build a Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1 id="title">Survey form</h1>
+<p id="description">This is the description of the survey</p>
+
+<form id="survey-form">
+  <label id="name-label" for="name">Enter your name:</label>
+  <input id="name" type="text" maxlength="30" placeholder="e.g. George Harrison" tabindex="1" required>
+  <br>
+  
+  <label id="email-label" for="email">Enter your email:</label>
+  <input id="email" type="email" placeholder="e.g. giorgioharris@gmail.com" tabindex="2" required>
+  <br>
+  
+  <label id="number-label" for="number">Enter your age:</label>
+  <input id="number" type="number" placeholder="e.g. 25" tabindex="3" min="21" max="30" required>
+  <br>
+  
+  <label id="country-label" for="country">Choose your country:</label>
+  <input id="country" list="dropdown" name="country">
+  <datalist id="dropdown">
+    <option value="Argentina">
+    <option value="Brazil">
+    <option value="Chile">
+    <option value="Uruguay">
+    <option value="Zimbabwe">
+  </datalist>
+  <br>
+  
+  <fieldset>
+    <legend>Are you human?</legend>
+    <label id="yes-human-label" for="yes-human">Yes</label>
+    <input id="yes-human" type="radio" name="human" value="yes"><br>
+    <label id="no-human-label" for="no-human">No</label>
+    <input id="no-human" type="radio" name="human" value="no"><br>
+  </fieldset>
+  <br>
+  
+  <fieldset>
+    <legend>Do you have a pet?</legend>
+    <label id="dog-label" for="dog">Dog</label>
+    <input id="dog" type="checkbox" name="pet" value="dog"><br>
+    <label id="cat-label" for="cat">Cat</label>
+    <input id="cat" type="checkbox" name="pet" value="cat"><br>
+    <label id="human-label" for="human">Human</label>
+    <input id="human" type="checkbox" name="pet" value="human">
+  </fieldset>
+  <br>
+  
+  <textarea id="comments" placeholder="Tell us the reason why you live."></textarea>
+  <br>
+  
+  <input id="submit" type="submit" value="Submit">
+</form>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
